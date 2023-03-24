@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4장 制作登陆页面</title>
+    </head>
+    <body>
+        <h1>为了使用者输入 form</h1>
+        <form name="myForm" method="get" action="new.html" onclick="a()">
+            名字：<input type="text" id="mz" >
+            <fieldset>
+                <legend >必须输入</legend>
+            [名字] ：<input type="text" name="user_name" id="user_name" placeholder="请输入名字" autofocus required>
+                <br>
+
+                <label for="">[密码]</label>
+                <input type="password" name="user_pwd" id="user_pwd">
+
+
+                
+            </fieldset>
+
+            <br><br>
+            <input type="submit" value="传送">
+            <input type="reset" value="再次输入">
+
+
+
+
+            <script>
+                function a(){
+                    var user_name=document.getElementById("user_name").value;
+                    if(user_name!=null){
+                        alert("文本："+user_name)
+                    }
+                    
+                    
+                }
+            </script>
+    </body>
+</html>
