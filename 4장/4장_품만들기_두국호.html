@@ -8,36 +8,139 @@
     </head>
     <body>
         <h1>为了使用者输入 form</h1>
-        <form name="myForm" method="get" action="new.html" onclick="a()">
+        <form name="myForm" method="post" action="new.html"  >
             名字：<input type="text" id="mz" >
             <fieldset>
-                <legend >必须输入</legend>
-            [名字] ：<input type="text" name="user_name" id="user_name" placeholder="请输入名字" autofocus required>
+                <legend>必须输入</legend>
+            [名字] :<input type="text" name="user_name" id="user_name" placeholder="请输入名字" autofocus required>
                 <br>
 
-                <label for="">[密码]</label>
+                <label for="">[密码] :</label>
                 <input type="password" name="user_pwd" id="user_pwd">
-
-
                 
             </fieldset>
-
             <br><br>
-            <input type="submit" value="传送">
-            <input type="reset" value="再次输入">
+            <fieldset>
+                <legend>选择输入</legend>
+                [学年]:
+                <input type="radio" name="grade" id="grade1" value="1学年" checked>1学年
+                <input type="radio" name="grade" id="grade2" value="2学年">2学年
+                <input type="radio" name="grade" id="grade3" value="3学年">
+                <label for="grade2">3学年</label>
+                <input type="radio" name="grade" id="grade4" value="4学年">
+                <label for="grade2">4学年</label>
+                <br><br>
 
+                [申请科目] :
+                <input type="checkbox" name="ck_c" id="ck_3" value="C_Program">
+                <label for="ck_c">C语言</label>
+                <input type="checkbox" name="ck_python" id="ck_python" value="python">
+                <label for="python">python</label>
+
+                <label>
+                    <input type="checkbox" name="ck_web" id="ck_web" value="web"> web
+                </label>
+
+                <label>
+                    <input type="checkbox" name="ck_sw" id="ck_sw" value="web"> sw
+                </label>
+                <br><br>
+                <label for="grade">学年:</label>
+                <select name="grade" id="grade">
+                    <option value="1">1学年</option>
+                    <option value="1">2学年</option>
+                    <option value="1">3学年</option>
+                    <option value="1">4学年</option>
+                </select>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>测试</legend>
+                <label for="">[检索]:</label>
+                <input type="search" name="user_search" id="user_search">
+            
+            <br><br>
+            <label for="">网页的网址</label>
+            <input type="url" name="user_url" id="user_url">
+            <br><br>
+
+            <label for="user_mail">[E-mail]</label>
+            <input type="emali" name="user_mail" id="user_mail">
+            <br>
+            <label for="user_mail">电话号</label>
+            <input type="tel" name="user_tel" id="user_tel">
+            <br>
+            
+            
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>其他</legend>
+            <label for="user_num">访问个数</label>
+             <input type="number" name="user_num" id="user_num">
+             <br>
+             <label for="user_ran">进行阶段</label>
+             <input type="range" name="user_ran" id="user_ran" min="1" max="4" value="1">
+                <br>
+
+             <label for="user_date">输出日期</label>
+             <input type="date" name="user_date" id="user_date" >
+             <br>
+             <label for="user_time">输出时间</label>
+             <input type="time" name="user_time" id="user_time" value="00:00">
+             <br>
+             <label for="user_color">生成信号</label>
+             <input type="color" name="user_color" id="user_color">
+             <br>
+             <label for="user_info">自己的介绍</label>
+             <textarea name="user_info" id="user_info" cols="50" rows="10"></textarea>
+          
+
+        </fieldset>
+            <br><br>
+            <fieldset>按钮
+            <input type="submit" value="传送"  onclick="a()">
+            <input type="reset" value="再次输入">
+            
+        <br><br>
+
+        <input type="button" value="计算机工学部" onclick="javascript:window.open('htppts//www.baidu.com')">
+        <br>
+        <input type="hidden" name="emailchk" value="N">
+    </fieldset>
+            <br>
+            
 
 
 
             <script>
+                
                 function a(){
-                    var user_name=document.getElementById("user_name").value;
-                    if(user_name!=null){
-                        alert("文本："+user_name)
+                    var user_name =document.getElementById("user_name").value;
+                    var user_pwd =document.getElementById("user_pwd").value;
+                    var user_tel =document.getElementById("user_tel").value;
+                    var user_mail =document.getElementById("user_mail").value;
+                    var user_pwd =document.getElementById("user_pwd").value;
+                    if(user_pwd ===""&&user_name){
+                        alert("账号或者密码不能为空");
                     }
-                    
-                    
+                    else if(user_pwd.length<=10){
+                        alert("请输入10位以上");
+                    }else if(user_tel.length!=11){
+                        alert("请输入11位手机号")
+                    }else if(user_mail ===""){
+                        alert("请输入邮箱");
+                    }
+                    else {
+                        alert("输入有误");
+                    }
+
                 }
+
+
+
             </script>
+          
     </body>
 </html>
