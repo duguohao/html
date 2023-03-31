@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="center">
+   
+    
+    <center>
+    <form name="myForm" method="post"   >
+       <h1 >상품 주문서</h1>
+        <fieldset  style="width: 500px;">
+            
+            <legend style="color: violet;">개인 정보</legend>
+            <ul>
+            <li>
+            이름： :<input type="text" name="user_name" id="user_name" placeholder="" autofocus required>
+        <br>
+            연락처 :<input type="text" name="user_tel" id="user_tel" placeholder="" autofocus required>
+        </li>
+    </ul>
+        </fieldset>
+            
+        <fieldset style="width: 500px;">
+            
+            <legend style="color:violet;">배송지 정보</legend>
+            <ul>
+            <li>
+            주서: :<input type="text" name="user_address" id="user_address" placeholder="" autofocus required>
+          <br>
+            연락처 :<input type="text" name="user_tel2" id="user_tel2" placeholder="" autofocus required>
+            <br>
+            메모 :<textarea name="user_address2" id="user_address2" cols="40" rows="3"></textarea>
+        </li>
+    </ul>
+        </fieldset>
+        <fieldset style="width: 500px;">
+            <legend style="color:violet;">주문 정보</legend>
+          
+         
+            <ul><li>
+
+            <label>
+                <input type="checkbox" name="ac1" id="ac1" value="web"> 관테말라 안티구아(100g) 
+                <input type="number" size="5dp" style="width: 20px;"> 개
+            </label>
+                <br>
+            <label>
+                <input type="checkbox" name="ac2" id="ac2" value="web"> 인도네시아 만델링(100g)
+                <input type="number" style="width: 20px;"> 개
+            </label>
+            </label>
+                <br>
+            <label>
+                <input type="checkbox" name="ac3" id="ac4" value="web">탐리는도디(블렌딩)(100g)
+                <input type="number" size="5" style="width: 20px;"> 개
+            </label>
+            </label>
+        </li></ul>
+                <br>
+                
+        </fieldset>
+        
+        <input type="submit" value="주문하기"  onclick="a()" >
+        <input type="reset" value="다시작성" >
+    </center>
+
+</body>
+</html>
