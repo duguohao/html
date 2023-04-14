@@ -1,13 +1,15 @@
 body{
     font-family: "akdrdms고딕","글릭","글림";
+    
 }
 
 header{
     background-color:darkcyan;
-    width:80%;
+    width:75%;
     margin: auto;
+    
     /* padding: 10px; */
-   padding: 10px;
+     padding: 10px;
     /* padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
@@ -15,7 +17,7 @@ header{
     overflow: hidden;
 }
 h1{
-    font-size: 1em;
+    font-size: 1.3em;
     /* background-color: darkorange; */
 }
 
@@ -42,3 +44,53 @@ a{
     text-decoration: none;
     color: white;
 }
+section{
+    width:75%;
+    margin: auto;
+    border:5px solid #333;
+    /* border-width: ;
+    border-style: ;
+    border-color: ; */
+    padding: 5px;
+}
+h2{
+    font-size: 1.8em;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -3px 3px 3px 0px rgb(158, 158, 158);
+}
+h3{
+    font-size: 1.3m;
+    margin: 15px 0px ;
+    border-left: 8px solid rgb(242, 55, 158)
+}
+
+p{
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px;
+    
+}
+dl{
+    line-height: 30px;
+    margin: 0px 30px;
+}
+
+dt{
+    font-size: 1.1em;
+    font-weight: bold;
+    color:  rgb(47,170,219);
+}
+ul{
+   line-height: 30px;
+}
+
+footer {
+    background-color:black;
+    width:75%;
+    color: white;
+    margin:auto;
+    padding: 10px ;
+    text-align: center;
+}
+

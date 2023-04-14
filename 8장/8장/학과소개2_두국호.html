@@ -6,26 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="layout.css">
+
+    <style>
+        article{
+         
+          width: 95%;
+          margin: auto;
+          margin: 20px 0px 20px 0px;
+          padding: 20px ;
+        
+        }
+        #com1{
+            border: 3px solid black ;
+            border-radius: 20px;
+        }
+        #com2{
+            border: 3px dotted green ;
+            border-radius: 20px;
+        }
+        #com3{
+            border: 3px double orange ;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .red_point{
+        color: red;
+        font-weight: bold;
+}
+
+
+
+    </style>
 </head>
 <body>
     <header>
         <h1>컴퓨터공학부</h1>
         <nav>
             <ul>
-                <li><a href="#">학부소개</a></li>
-                <li><a href="#">컴퓨터공학 전공</a></li>
-                <li><a href="#">메타버스전공</a></li>
-                <li><a href="#">교욕 목표</a></li>
+                <li><a href="#com1">학부소개</a></li>
+                <li><a href="#com2">컴퓨터공학 전공</a></li>
+                <li><a href="#com3">메타버스전공</a></li>
+                <li><a href="#com4">교욕 목표</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
         
-        <article>
+        <article id="com1">
             <p class="info">
-                <h2>학부소개 전공</h2>
-            <h3>소개</h3>
+                <h2>학부소개</h2>
+            
                 본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
                 2023년 현재까지 34년 동안 2천여 명의 졸업생을 배출하였습니다.  <br>
                 졸업생들은 우리나라 최고의 IT기업에서부터 소프트웨어 전문개발업체, 기업체, 금융기업, 공공기관 
@@ -40,7 +71,7 @@
 
 
 
-        <article>
+        <article id="com2">
             <h2>컴퓨터공학 전공</h2>
             <h3>소개</h3>
             <p>
@@ -59,8 +90,8 @@
 
 
             
-        </article>
-        <article>
+        </article >
+        <article id="com3">
             <h2>메타버스전공</h2>
             <h3>소개</h3>
             <p> 
@@ -79,7 +110,7 @@
 
            
         </article>
-        <article>
+        <article id="com4">
             <h2>교욕 목표</h2>
           
             <p>
