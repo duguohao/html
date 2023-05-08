@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两个要求두국호</title>
+    <style>
+        .content{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+        div img{
+
+        }
+        #black img{
+            display: block;
+            margin: 10px;
+          
+        }
+        #List li{
+            background-color: aliceblue;
+            margin: 10px;
+            width: 150px;
+            height: 50px
+
+        }
+        #inline li{
+            background-color: rgb(29, 82, 128);
+            margin: 10px;
+            display: inline;
+        }
+        #inlineList li{
+            background-color: rgb(138, 136, 15);
+            margin: 10px;
+            display: inline-block;
+        }
+        .overlap{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black;
+            display: inline-block; 
+        }
+        .box1, .box2{
+            width: 300px;
+            height: 100px;
+            margin: 30px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+        .box1{
+            box-sizing: content-box;
+            
+        }
+        .box2{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>컨덴츠 크기</h1>
+    <div class="content" style="background-color: brown;" ></div>
+    <div class="content" style="background-color: rgb(31, 88, 121);"></div>
+    <div class="content" style="background-color: rgb(170, 197, 19);"></div>
+
+    <hr>
+
+    <h1>inline的化名</h1>
+    <div>
+        <img src="images/pic1.jpg" alt="">
+        <img src="images/pic2.jpg" alt="">
+        <img src="images/pic3.jpg" alt="">
+
+    </div>
+
+    <h1>inline的化名</h1>
+    <div id="black">
+        <img src="images/pic1.jpg" alt="">
+        <img src="images/pic2.jpg" alt="">
+        <img src="images/pic3.jpg" alt="">
+
+    </div>
+
+    <hr>
+
+    <h1>菜单</h1>
+    <ul id="List">
+        <li>学校介绍</li>
+        <li>计算机专业</li>
+        <li>专业</li>
+        <li>教育目标</li>
+        <li>主要科目</li>
+    </ul>
+
+    
+    <h1>菜单</h1>
+    <ul id="inline">
+        <li>学校介绍</li>
+        <li>计算机专业</li>
+        <li>专业</li>
+        <li>教育目标</li>
+        <li>主要科目</li>
+    </ul>
+
+    <h1>菜单</h1>
+    <ul id="inlineList">
+        <li>学校介绍</li>
+        <li>计算机专业</li>
+        <li>专业</li>
+        <li>教育目标</li>
+        <li>主要科目</li>
+    </ul>
+
+    <hr>
+    
+    <h2>margin</h2>
+    <div class="content" style="background-color: brown;" ></div>
+    <div class="content" style="background-color: rgb(31, 88, 121);"></div>
+  
+    <div class="overlap" style="background-color: rgb(31, 88, 121);"></div>
+    <div class="overlap" style="background-color: rgb(170, 197, 19);"></div>
+
+    <hr>
+    <h1>box 尺寸</h1>
+    <div class="box1" style="background-color: blue;">content-box</div>
+    <div class="box2" style="background-color: rgb(141, 160, 37);">border-box</div>
+    
+</body>
+</html>
