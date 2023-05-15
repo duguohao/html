@@ -1,0 +1,82 @@
+body{
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+header{
+    width: 80%;
+    background-color:burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 80px;
+}
+
+header > h1{
+    color: aliceblue;
+    float: left;
+}
+
+header > nav{
+    float: right;
+    padding-top: 20px;
+}
+
+nav > ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline;
+    margin: 15px;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+article{
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(58, 54, 54);
+    padding: 5px;
+    
+}
+section{
+    columns: 3;
+    column-rule: 1px dotted rgb(241, 229, 229);
+    padding: 10px;
+}
+section h3{
+    break-before: column;
+    padding-left: 15px;
+ 
+    
+}
+section dt{
+    padding-left: 20px;
+    
+}
+section dt,section dd{
+    line-height: 30px;
+}
+footer{
+    clear: both;
+    color: aliceblue;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: black;
+    
+}
+aside{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: chartreuse;
+    margin: 0 auto;
+}
