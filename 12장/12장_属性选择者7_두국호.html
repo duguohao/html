@@ -10,8 +10,7 @@
             list-style: none;
         }
         li{
-            display: inline-block;
-            width: 120px;
+          
             margin: 10px;
         }
         li >a{
@@ -21,23 +20,26 @@
             padding: 5px 20px;
             
         }
-        .flat{
-            background-color: blue;
+        a[href *="b"]{
+            background-color: yellow;
         }
-        [class |="button"]{
-            border:2px solide black;
-            box-shadow:black 5px 5px;
+        a[target="_blank"]{
+            background:url(newwindow.png)no-repeat center right;
+            padding-right: 30px;
         }
-      
+        
+        
     </style>
 </head>
 <body>
     <h2>html5</h2>
+    <p>下面这些</p>
     <ul>
-        <li><a href="#" target="_blank">菜单1</a></li>
-        <li><a href="#" target="_blank">菜单2</a></li>
-        <li><a href="#" class="button">菜单3</a></li>
-        <li><a href="#" class="flat button2">菜单4</a></li>
+      
+        <li><a href="http://baidu.com" target="_blank">html</a></li>
+        <li><a href="http://baidu.com">css</a></li>
+        <li><a href="http://baidu.com">미디어</a></li>
+        <li><a href="https://computer.silla.ac.kr">计算机工学部</a></li>
        
     </ul>
     <div>

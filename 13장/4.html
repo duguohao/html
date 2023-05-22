@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+            -webkit-perspective: 200px;
+            perspective: 200px;
+        }
+        .rotatex{
+            -webkit-transform:rotatex(20deg);
+            -ms-transform: rotatex(20deg);
+            -o-transform: rotatex(20deg);
+            transform: rotatex(20deg);
+            transform: rotatex(20deg);
+            transition:  all .9s;
+        }
+        .rotatey{
+            -webkit-transform:rotatey(45deg);
+            -ms-transform: rotatey(45deg);
+            -o-transform: rotatey(45deg);
+            transform: rotatey(45deg);
+            transform: rotatey(45deg);
+            transition:  all .9s;
+        }
+
+        .rotatez{
+            -webkit-transform: rotatez(45deg);
+            -ms-transform:rotatez(45deg);;
+            -o-transform: rotatez(45deg);
+            transform: rotatez(45deg);
+            transform: rotatez(45deg);
+            transition:  all .9s;
+        }
+        .rotatexyz{
+            transform: rotate3d(2.5,1.2,-1.5,45deg);
+            
+        }
+
+        .rotate2:hover{
+
+            transform: rotate(-99900deg);
+            transition:  all .9s;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotatex">
+            <img src="fruit.jpg" >
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatey">
+            <img src="fruit.jpg" >
+        </div>
+    </div>
+    <div class="origin">
+        <div class="rotatez">
+            <img src="fruit.jpg" >
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatexyz">
+            <img src="fruit.jpg" >
+        </div>
+    </div>
+
+
+</body>
+</html>

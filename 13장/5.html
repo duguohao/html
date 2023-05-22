@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{
+            width: 200px;
+            height: 130px;
+            
+            margin: 40px;
+            float: left;
+        }
+        .movex:hover{
+            -webkit-transform: translateX(50px);
+            -ms-transform: translateX(50px);
+            -o-transform: translateX(50px);
+            transform: translatex(50px);
+            transform: translatex(20px);
+        }
+        .movey:hover{
+            -webkit-transform: translatey(50px);
+            -ms-transform: translatey(50px);
+            -o-transform: translatey(50px);
+            transform: translatey(50px);
+            transform: translatey(20px);
+        }
+
+        .movexy:hover{
+            -webkit-transform: translate(10px,50px);
+            -ms-transform: translate(10px,50px);
+            -o-transform: translate(10px,50px);
+            transform: translate(10px,50px);
+            transform: translate(10px,50px);
+            transition:  all .9s;
+            
+        
+        }
+
+        .skewx:hover{
+            -webkit-transform: skewX(30deg);
+            -ms-transform: skewX(30deg);
+            -o-transform: skewX(30deg);
+            transform: skewX(30deg);
+            transform: skewX(30deg);
+            transition:  all .9s;
+            
+        
+        }
+        
+        .skewy:hover{
+            -webkit-transform: skewY(15deg);
+            -ms-transform: skewY(15deg);
+            -o-transform: skewY(15deg);
+            transform: skewY(15deg);
+            transform: skewY(15deg);
+            transition:  all .9s;
+            
+        
+        }
+
+        .skewxy:hover{
+            -webkit-transform: skew(-25deg,-15deg);
+            -ms-transform:skew(-25deg,-15deg);
+            -o-transform: skew(-25deg,-15deg);
+            transform: skew(-25deg,-15deg);
+            transform: skew(-25deg,-15deg);
+            transition:  all .9s;
+            
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="skewx">
+            <img src="rose.jpg" >
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="skewy">
+            <img src="rose.jpg" >
+        </div>
+    </div>
+
+
+    <div class="origin">
+        <div class="skewxy">
+            <img src="rose.jpg" >
+        </div>
+    </div>
+</body>
+</html>

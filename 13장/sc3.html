@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin{
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+        .scalex:hover{
+            -webkit-transform:scaleX(1.2);
+            -ms-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+            transform: scaleX(1.2);
+            transition:  all .9s;
+        }
+        .scaley:hover{
+            -webkit-transform:scaley(1.5);
+            -ms-transform: scaley(1.5);
+            -o-transform: scaley(1.5);
+            transform: scaley(1.5);
+            transform:scaley(1.5);
+            transition:  all .9s;
+        }
+
+        .scale:hover{
+            -webkit-transform: scale(0.7);
+            -ms-transform:scale(0.7);
+            -o-transform: scale(0.7);;
+            transform: scale(0.7);
+            transform: scale(0.7);
+            transition:  all .9s;
+        }
+        .rotate1:hover{
+            transform: rotate(20deg);
+            transition:  all .9s;
+        }
+
+        .rotate2:hover{
+
+            transform: rotate(-400deg);
+            transition:  all .9s;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="rotate1">
+            <img src="fruit.jpg" >
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotate2">
+            <img src="fruit.jpg" >
+        </div>
+    </div>
+
+
+</body>
+</html>

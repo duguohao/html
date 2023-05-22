@@ -21,24 +21,29 @@
             padding: 5px 20px;
             
         }
-        .flat{
-            background-color: blue;
-        }
-        [class |="button"]{
-            border:2px solide black;
-            box-shadow:black 5px 5px;
-        }
+      a[target |="us"]{
+        background:url(us.png) no-repeat left center;
+        padding: 5px 25px;
+      }
+      a[target |="us-e"]{
+        background:url(us.png) no-repeat left center;
+        padding: 5px 25px;
+      }
+      
+      a[target |="jp"]{
+        background:url(jp.png) no-repeat left center;
+        padding: 5px 25px;
+      }
       
     </style>
 </head>
 <body>
     <h2>html5</h2>
     <ul>
-        <li><a href="#" target="_blank">菜单1</a></li>
-        <li><a href="#" target="_blank">菜单2</a></li>
-        <li><a href="#" class="button">菜单3</a></li>
-        <li><a href="#" class="flat button2">菜单4</a></li>
-       
+        <li>外国语 服务：</li>
+        <li><a href="#" target="us">英语</a></li>
+        <li><a href="#" target="us-e">e</a></li>
+        <li><a href="#" class="flat button2" target="jp">日本语</a></li>
     </ul>
     <div>
         

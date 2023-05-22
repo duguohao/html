@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            width: 120px;
+            margin: 10px;
+        }
+        li >a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            padding: 5px 20px;
+            
+        }
+      a[target |="eng"]{
+        background:url(us.png) no-repeat left center;
+        padding: 5px 25px;
+      }
+      a[target |="ch"]{
+        background:url(ch.png) no-repeat left center;
+        padding: 5px 25px;
+      }
+      
+      a[target |="jp"]{
+        background:url(jp.png) no-repeat left center;
+        padding: 5px 25px;
+      }
+      a[href *=hwp]{
+        background: url(hwp_icon.gif)no-repeat left center;
+        padding: 5px 25px;
+    }
+    a[href $=xlsx]{
+        background: url(excel_icon.gif)no-repeat left center;
+        padding: 5px 25px;
+    }
+    </style>
+</head>
+<body>
+    <h2>html5</h2>
+    <ul>
+       <h2>下载学科介绍文件</h2>
+        <li><a href="hwp" >韩语文件</a></li>
+        <li><a href="xlsx" >文件</a></li>
+    </ul>
+    <div>
+        
+    </div>
+</body>
+</html>
