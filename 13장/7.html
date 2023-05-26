@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+    width: 200px;
+    height: 200px;
+      }
+      .container{
+        border: 2px  solid black;
+        float: left;
+        perspective: 300px;
+        margin-top: 300px;
+        margin-left: 100px;
+      }
+      .box1 {
+        background-color: rgb(114, 212, 167);
+        -webkit-transform: rotatey(45deg);
+            -ms-transform:rotatey(45deg);;
+            -o-transform: rotatey(45deg);
+            transform: rotatey(45deg);
+            transform: rotatey(45deg);
+            
+      }
+
+      .box2{
+        background-color: blue;
+        -webkit-transform: rotatex(45deg);
+            -ms-transform:rotatex(45deg);;
+            -o-transform: rotatex(45deg);
+            transform: rotatex(45deg);
+            transform: rotatex(45deg);
+            -webkit-transform-origin:  left top;
+            -ms-transform-origin:  left top;
+            -o-transform-origin:  left top;
+            transform-origin:  left top;
+            transform-origin:  left top;
+            
+      }
+      #style1{
+        transform-style: flat;
+        -webkit-transform-style:  flat;
+            -ms-transform-style:  flat;
+            -o-transform-style:  flat;
+            transform-origin:  flat;
+            
+      }
+      #style2{
+        -webkit-transform-style:  preserve-3d;
+            -ms-transform-style:  preserve-3d;
+            -o-transform-style:  preserve-3d;
+            transform-origin:  preserve-3d;
+            
+        transform-style: preserve-3d;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="box1" id="style1">    
+            <div class="box2" ></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div  class="box1" id="style2">
+            <div class="box2" ></div>
+        </div>
+    </div>
+</body>
+</html>

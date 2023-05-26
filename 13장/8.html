@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+    width: 200px;
+    height: 200px;
+      }
+      .container{
+        border: 2px  solid black;
+        float: left;
+        perspective: 300px;
+        margin-top: 300px;
+        margin-left: 100px;
+      }
+      .box1 {
+        background-color: aqua;
+        transform: rotateY(135deg);
+            
+      }
+      #back1{
+        backface-visibility: hidden;
+      }
+      #back2{
+        backface-visibility: visible;
+    }
+
+    
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="box1" id="back1">    
+         
+            <h1>back</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div  class="box1" id="back2">
+            
+            <h1>back</h1>
+        </div>
+    </div>
+</body>
+</html>
